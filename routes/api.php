@@ -62,11 +62,11 @@ Route::post('/customer',[CustomerController::class,('store')]);
 Route::patch('/customer/{id}',[CustomerController::class,('update')]);
 Route::delete('/customer/{id}',[CustomerController::class,('destroy')]);
 
-// Route suppliers
+// Route purchases
 Route::get('/purchases',[PurchasesController::class,('index')]);
 Route::get('/purchases/{id}',[PurchasesController::class,('show')]);
 Route::post('/purchases',[PurchasesController::class,('store')]);
-// Route::put('/suppliers/{id}',[PurchasesController::class,('update')]);
+// Route::put('/purchases/{id}',[PurchasesController::class,('update')]);
 Route::patch('/purchases/{id}',[PurchasesController::class,('update')]);
 Route::delete('/purchases/{id}',[PurchasesController::class,('destroy')]);
 
